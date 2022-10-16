@@ -39,6 +39,6 @@ def parse_bytes(file_bytes):
 
 def pretty_print(dispersed_data):
     for data in dispersed_data:
-        print(data+"["+str(dispersed_data[data][-1])+"]",":",binascii.hexlify(dispersed_data[data][0], " ").decode('ascii'))
+        print(data+"["+str(dispersed_data[data][-1])+"]",":",binascii.hexlify(dispersed_data[data][0], " ").decode('ascii').upper())
 
 pretty_print(parse_bytes(read_bytes(input("File Path> "))))
