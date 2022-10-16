@@ -25,8 +25,6 @@ SHELL_LINK_HEADER = {"HEADER_SIZE":[0x0, 0x4],
                      "RESERVED_2":[0x0,0x4],
                      "RESERVED_3":[0x0,0x4]}
 
-SHELL_LINK = [SHELL_LINK_HEADER]
-
 def read_bytes(file_path):
     with open(file_path, "rb") as file:
         return file.read()
